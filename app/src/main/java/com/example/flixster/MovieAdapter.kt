@@ -35,10 +35,7 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
                 Glide.with(context).load(movie.backdropImageURL).into(ivBackdrop)
             }
         }
-
     }
-
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         Log.i(TAG, "onCreateViewHolder")
