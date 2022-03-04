@@ -21,6 +21,8 @@ Flixster is an app that allows users to browse movies from the [The Movie Databa
 ### App Walkthough GIF
 <img src="http://g.recordit.co/glnWts2efc.gif" width=250><br>
 <img src="http://g.recordit.co/KqOVMBaMIL.gif" width=647 height=347><br>
+<img src="http://g.recordit.co/XHrweF5CZo.gif" width=250><br>
+
 
 ### Notes
 The app terminated when switched to landscape mode, so I had to add some conditial statements to handle the change in orientation.
