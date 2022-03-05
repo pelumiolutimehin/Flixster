@@ -1,8 +1,8 @@
 package com.example.flixster
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.widget.RatingBar
 import android.widget.TextView
 import com.codepath.asynchttpclient.AsyncHttpClient
@@ -12,6 +12,7 @@ import com.google.android.youtube.player.YouTubeInitializationResult
 import com.google.android.youtube.player.YouTubePlayer
 import com.google.android.youtube.player.YouTubePlayerView
 import okhttp3.Headers
+
 
 private const val YOUTUBE_API_KEY = "AIzaSyCaCbhWJJJNZxxY2VMwmotix0ntwi2rZaw"
 private const val TAG = "DetailActivity"
@@ -84,5 +85,15 @@ class DetailActivity : YouTubeBaseActivity() {
             }
 
         })
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                finishAfterTransition()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
